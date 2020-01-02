@@ -1,5 +1,6 @@
 package com.houarizegai.calculator;
 
+import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -15,6 +16,9 @@ public class Button {
 	private Pos pos;
 	protected KeyStroke key;
 	protected JButton btn;
+	
+	private Color back, fore;
+	private int style, size;
 	
 	public String getName() {
 		return name;
@@ -78,6 +82,47 @@ public class Button {
 		        args.setGo(true);
 			}
 		};
+	}
+	
+	public Color getBack() {
+		return back;
+	}
+	public void setBack(Color back) {
+		this.back = back;
+	}
+	
+	public Color getFore() {
+		return fore;
+	}
+	public void setFore(Color fore) {
+		this.fore = fore;
+	}
+	
+	public int getStyle() {
+		return style;
+	}
+	public void setStyle(int style) {
+		this.style = style;
+	}
+	
+	public int getSize() {
+		return size;
+	}
+	public void setSize(int size) {
+		this.size = size;
+	}
+	
+	protected void change() {
+		if(Ui.getStyle() instanceof DefaultStyle) {
+			setBack(null);
+			setFore(Color.BLACK);
+		} else if(Ui.getStyle() instanceof ColorStyle) {
+			
+		}
+	}
+	protected void update() {
+		btn.setBackground(back);
+		btn.setForeground(fore);
 	}
 	
 }

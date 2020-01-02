@@ -207,11 +207,11 @@ public class Key {
 		return new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 //				System.out.println(Ui.getStyle().getName());
-				if(Ui.getStyle().getName().equals("color"))
-					Ui.setStyle(new Style("default"));
-				else
-					Ui.setStyle(new Style("color"));
-				Ui.getStyle().Change();
+//				if(Ui.getStyle().getName().equals("color"))
+//					Ui.setStyle(new Style("default"));
+//				else
+//					Ui.setStyle(new Style("color"));
+//				Ui.getStyle().Change();
 			}
 		};
 	}

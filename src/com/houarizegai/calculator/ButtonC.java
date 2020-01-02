@@ -1,5 +1,6 @@
 package com.houarizegai.calculator;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -23,4 +24,16 @@ public class ButtonC extends Button {
 			}
 		};
 	}
+	
+	@Override
+	protected void change() {
+		if(Ui.getStyle() instanceof DefaultStyle) {
+			setBack(null);
+			setFore(Color.BLACK);
+		} else if(Ui.getStyle() instanceof ColorStyle) {
+			setBack(Color.RED);
+			setFore(Color.WHITE);
+		}
+	}
+	
 }
