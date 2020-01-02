@@ -2,6 +2,7 @@ package com.houarizegai.calculator;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Font;
 import java.util.Arrays;
 
 import javax.swing.JButton;
@@ -22,7 +23,6 @@ public class Style {
 	
 	public void Change() {
 		Component[] component = Ui.getComponents();
-//		System.out.println(component.length);
 		for(int i=0; i<component.length; i++)
 	    {
 	        if (component[i] instanceof JButton)
@@ -63,10 +63,22 @@ public class Style {
 	            			} else {
 	            				btn.setBackground(Color.PINK);
 	            			}
-	            		} else {
-//	            			btn.setBackground(Color.WHITE);
 	            		}
 	            	}
+	        	}
+	        }
+	    }
+	}
+	
+	public void setFont() {
+		Component[] component = Ui.getComponents();
+		for(int i=0; i<component.length; i++)
+	    {
+	        if (component[i] instanceof JButton)
+	        {
+	        	JButton btn = (JButton)component[i];
+	        	if(!btn.getText().equals("Toggle Colors")) {
+	        		btn.setFont(new Font("Comic Sans MS", Font.PLAIN, 28));
 	        	}
 	        }
 	    }

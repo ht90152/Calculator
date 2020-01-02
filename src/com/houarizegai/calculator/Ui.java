@@ -21,7 +21,7 @@ public class Ui {
 		return window.getContentPane().getComponents();
 	}
 	
-	public JTextField getJText() {
+	public static JTextField getJText() {
 		return inText;
 	}
 	
@@ -74,6 +74,7 @@ public class Ui {
         
 		window.add(newButton(new Key("Toggle Colors", args), new Pos(200, 30, 140, 18)));
 		setStyle(new Style("color"));
+		style.setFont();
 		style.Change();
 		
         window.setLayout(null);

@@ -1,10 +1,12 @@
 package com.houarizegai.calculator;
 
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.util.regex.Pattern;
 
+import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
 public class Key {
@@ -130,7 +132,8 @@ public class Key {
 	}
 	
 	private double calc(double x, String input, char opt) {
-//        inText.setFont(inText.getFont().deriveFont(Font.BOLD));
+		JTextField inText = Ui.getJText();
+        inText.setFont(inText.getFont().deriveFont(Font.BOLD));
         double y = Double.parseDouble(input);
         if (opt == '+') {
             return x + y;
@@ -143,7 +146,7 @@ public class Key {
         } else if (opt == '%') {
             return x % y;
         }
-//        inText.setFont(inText.getFont().deriveFont(Font.PLAIN));
+        inText.setFont(inText.getFont().deriveFont(Font.PLAIN));
         return y;
     }
 	private ActionListener eventSign(char sign, CalcArg args) {
