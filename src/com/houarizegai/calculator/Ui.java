@@ -44,6 +44,9 @@ public class Ui {
         window.setSize(400,600); // Height And Width Of Window
         window.setLocationRelativeTo(null); // Move Window To Center
         
+//        style = new DefaultStyle();
+		window.add(new ButtonToggle(new Pos(200, 30, 140, 18), args).getBtn());
+        
         int wBtn = 80;// Width Button
         int hBtn = 70;// Height Button
         int marginX = 20;
@@ -58,24 +61,38 @@ public class Ui {
         inText.setFont(new Font("Comic Sans MS", Font.PLAIN, 33));
         window.add(inText);
         
-        window.add(newButton(new Key("0", args), new Pos(x[1],y[5],wBtn,hBtn)));
-        for(int i = 1;i < 10; i++) {
-        	window.add(newButton(new Key(Integer.toString(i), args), new Pos(x[(i-1)%3],y[(9-i)/3+2],wBtn,hBtn)));
-        }
-        window.add(newButton(new Key("C", args), new Pos(x[0],y[1],wBtn,hBtn)));
-        window.add(newButton(new Key("<-", args), new Pos(x[1],y[1],wBtn,hBtn)));
-        window.add(newButton(new Key("%", args), new Pos(x[2],y[1],wBtn,hBtn)));
-        window.add(newButton(new Key("/", args), new Pos(x[3],y[1],wBtn,hBtn)));
-        window.add(newButton(new Key("*", args), new Pos(x[3],y[2],wBtn,hBtn)));
-        window.add(newButton(new Key("-", args), new Pos(x[3],y[3],wBtn,hBtn)));
-        window.add(newButton(new Key("+", args), new Pos(x[3],y[4],wBtn,hBtn)));
-        window.add(newButton(new Key(".", args), new Pos(x[0],y[5],wBtn,hBtn)));
-        window.add(newButton(new Key("=", args), new Pos(x[2],y[5],wBtn*2+10,hBtn)));
+//        window.add(newButton(new Key("0", args), new Pos(x[1],y[5],wBtn,hBtn)));
+//        for(int i = 1;i < 10; i++) {
+//        	window.add(newButton(new Key(Integer.toString(i), args), new Pos(x[(i-1)%3],y[(9-i)/3+2],wBtn,hBtn)));
+//        }
+//        window.add(newButton(new Key("C", args), new Pos(x[0],y[1],wBtn,hBtn)));
+//        window.add(newButton(new Key("<-", args), new Pos(x[1],y[1],wBtn,hBtn)));
+//        window.add(newButton(new Key("%", args), new Pos(x[2],y[1],wBtn,hBtn)));
+//        window.add(newButton(new Key("/", args), new Pos(x[3],y[1],wBtn,hBtn)));
+//        window.add(newButton(new Key("*", args), new Pos(x[3],y[2],wBtn,hBtn)));
+//        window.add(newButton(new Key("-", args), new Pos(x[3],y[3],wBtn,hBtn)));
+//        window.add(newButton(new Key("+", args), new Pos(x[3],y[4],wBtn,hBtn)));
+//        window.add(newButton(new Key(".", args), new Pos(x[0],y[5],wBtn,hBtn)));
+//        window.add(newButton(new Key("=", args), new Pos(x[2],y[5],wBtn*2+10,hBtn)));
         
-		window.add(newButton(new Key("Toggle Colors", args), new Pos(200, 30, 140, 18)));
-		setStyle(new Style("color"));
-		style.setFont();
-		style.Change();
+        window.add(new ButtonNum("0", new Pos(x[1],y[5],wBtn,hBtn), args).getBtn());
+        for(int i = 1;i < 10; i++) {
+        	window.add(new ButtonNum(Integer.toString(i), new Pos(x[(i-1)%3],y[(9-i)/3+2],wBtn,hBtn), args).getBtn());
+        }
+        window.add(new ButtonC(new Pos(x[0],y[1],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonBack(new Pos(x[1],y[1],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonMod(new Pos(x[2],y[1],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonDiv(new Pos(x[3],y[1],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonMul(new Pos(x[3],y[2],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonMin(new Pos(x[3],y[3],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonAdd(new Pos(x[3],y[4],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonPoint(new Pos(x[0],y[5],wBtn,hBtn), args).getBtn());
+        window.add(new ButtonEqual(new Pos(x[2],y[5],wBtn*2+10,hBtn), args).getBtn());
+        
+//		window.add(newButton(new Key("Toggle Colors", args), new Pos(200, 30, 140, 18)));
+//		setStyle(new Style("color"));
+//		style.setFont();
+//		style.Change();
 		
         window.setLayout(null);
         window.setResizable(false);
