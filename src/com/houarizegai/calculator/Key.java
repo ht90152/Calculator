@@ -63,6 +63,9 @@ public class Key {
 			listener = eventPoint(args);
 		} else if(string.equals("=")) {
 			listener = eventEqual(args);
+		} else if(string.equals("Toggle Colors")) {
+			listener = eventStyle(args);
+			setKey(KeyStroke.getKeyStroke(KeyEvent.VK_T, 0));
 		}
 	}
 	
@@ -193,6 +196,19 @@ public class Key {
 		            	args.setOpt('=');
 		             	args.setAddWrite(false);
 		         	}
+			}
+		};
+	}
+	
+	private ActionListener eventStyle(CalcArg args) {
+		return new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+//				System.out.println(Ui.getStyle().getName());
+				if(Ui.getStyle().getName().equals("color"))
+					Ui.setStyle(new Style("default"));
+				else
+					Ui.setStyle(new Style("color"));
+				Ui.getStyle().Change();
 			}
 		};
 	}

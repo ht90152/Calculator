@@ -1,6 +1,7 @@
 package com.houarizegai.calculator;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -12,10 +13,34 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 public class Ui {
+    private static JFrame window; // This is Main Window
 	private static JTextField inText;
+	private static Style style;
+	
+	public static Component[] getComponents() {
+		return window.getContentPane().getComponents();
+	}
+	
+	public JTextField getJText() {
+		return inText;
+	}
+	
+	public static Style getStyle() {
+		return style;
+	}
+	public static void setStyle(Style st) {
+		style = st;
+	}
+	
+	public static String getText() {
+		return inText.getText();
+	}
+	public static void setText(String string) {
+		inText.setText(string);
+	}
 	
 	Ui(CalcArg args) {
-		JFrame window = new JFrame("Calculator");
+		window = new JFrame("Calculator");
         window.setSize(400,600); // Height And Width Of Window
         window.setLocationRelativeTo(null); // Move Window To Center
         
@@ -23,8 +48,6 @@ public class Ui {
         int hBtn = 70;// Height Button
         int marginX = 20;
         int marginY = 60;
-        int j = -1;
-        int k = -1;
         int[] x = {marginX, marginX + 90, marginX + 180, marginX + 270};
         int[] y = {marginY, marginY + 100, marginY + 180, marginY + 260, marginY + 340, marginY + 420};
 
@@ -49,21 +72,19 @@ public class Ui {
         window.add(newButton(new Key(".", args), new Pos(x[0],y[5],wBtn,hBtn)));
         window.add(newButton(new Key("=", args), new Pos(x[2],y[5],wBtn*2+10,hBtn)));
         
+		window.add(newButton(new Key("Toggle Colors", args), new Pos(200, 30, 140, 18)));
+		setStyle(new Style("color"));
+		style.Change();
+		
         window.setLayout(null);
         window.setResizable(false);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // If Click into The Red Button => End The Processus
 		window.setVisible(true);
 	}
 	
-	public static String getText() {
-		return inText.getText();
-	}
-	public static void setText(String string) {
-		inText.setText(string);
-	}
-	
 	private JButton newButton(Key key, Pos pos) {
 		JButton btn = new JButton(key.getName());
+		btn.setToolTipText(key.getName());
         btn.setBounds(pos.x, pos.y, pos.width, pos.height);
 //        btn.setFont(btnFont);
         btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
@@ -80,4 +101,5 @@ public class Ui {
         
         return btn;
 	}
+	
 }
