@@ -2,6 +2,7 @@ package com.houarizegai.calculator;
 
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.regex.Pattern;
@@ -112,7 +113,7 @@ public class Button {
 		this.size = size;
 	}
 	
-	protected void change() {
+	protected void changeStyle() {
 		if(Ui.getStyle() instanceof DefaultStyle) {
 			setBack(null);
 			setFore(Color.BLACK);
@@ -123,6 +124,10 @@ public class Button {
 	protected void update() {
 		btn.setBackground(back);
 		btn.setForeground(fore);
+	}
+	
+	protected void setBtnFont() {
+		btn.setFont(new Font("Comic Sans MS", Font.PLAIN, 28));
 	}
 	
 }

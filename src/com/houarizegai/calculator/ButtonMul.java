@@ -14,7 +14,7 @@ public class ButtonMul extends ButtonSign {
 	}
 	
 	@Override
-	protected void change() {
+	protected void changeStyle() {
 		if(Ui.getStyle() instanceof DefaultStyle) {
 			setBack(null);
 			setFore(Color.BLACK);

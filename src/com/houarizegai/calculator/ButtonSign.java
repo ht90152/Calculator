@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 
-public class ButtonSign extends Button {
+public class ButtonSign extends ButtonFunc {
 	ButtonSign(String sign, Pos pos, CalcArg args){
 		name = sign;
 		newButton(pos, args);

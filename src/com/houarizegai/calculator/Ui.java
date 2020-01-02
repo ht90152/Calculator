@@ -1,14 +1,9 @@
 package com.houarizegai.calculator;
 
 import java.awt.Color;
-import java.awt.Cursor;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 
-import javax.swing.AbstractAction;
-import javax.swing.JButton;
-import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
@@ -73,7 +68,7 @@ public class Ui {
         btns.add(new ButtonEqual(new Pos(x[2],y[5],wBtn*2+10,hBtn), args));
         
         setStyle(new DefaultStyle());
-        btns.add(new ButtonToggle(new Pos(200, 30, 140, 18), args));
+        btns.add(new ButtonStyleToggle(new Pos(200, 30, 140, 18), args));
         
         for(Button btn:btns) {
         	window.add(btn.getBtn());
@@ -83,26 +78,6 @@ public class Ui {
         window.setResizable(false);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // If Click into The Red Button => End The Processus
 		window.setVisible(true);
-	}
-	
-	private JButton newButton(Key key, Pos pos) {
-		JButton btn = new JButton(key.getName());
-		btn.setToolTipText(key.getName());
-        btn.setBounds(pos.x, pos.y, pos.width, pos.height);
-//        btn.setFont(btnFont);
-        btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        btn.addActionListener(key.getListener());
-        // key
-        btn.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(key.getKey(), key.getName()+" key");
-//        btn.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(KeyStroke.getKeyStroke("keyPAD"+key.name), key+" key");
-        btn.getActionMap().put(key.getName()+" key", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent ev) {
-                btn.doClick();
-            }
-        });
-        
-        return btn;
 	}
 	
 }

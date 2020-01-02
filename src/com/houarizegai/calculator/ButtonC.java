@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.KeyStroke;
 
-public class ButtonC extends Button {
+public class ButtonC extends ButtonFunc {
 	ButtonC(Pos pos, CalcArg args){
 		name = "C";
 		newButton(pos, args);
@@ -26,7 +26,7 @@ public class ButtonC extends Button {
 	}
 	
 	@Override
-	protected void change() {
+	protected void changeStyle() {
 		if(Ui.getStyle() instanceof DefaultStyle) {
 			setBack(null);
 			setFore(Color.BLACK);

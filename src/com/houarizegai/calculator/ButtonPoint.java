@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ButtonPoint extends Button {
+public class ButtonPoint extends ButtonFunc {
 	ButtonPoint(Pos pos, CalcArg args){
 		name = ".";
 		newButton(pos, args);
@@ -28,7 +28,7 @@ public class ButtonPoint extends Button {
 	}
 	
 	@Override
-	protected void change() {
+	protected void changeStyle() {
 		if(Ui.getStyle() instanceof DefaultStyle) {
 			setBack(null);
 			setFore(Color.BLACK);

@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.KeyStroke;
 
-public class ButtonBack extends Button {
+public class ButtonBack extends ButtonFunc {
 	ButtonBack(Pos pos, CalcArg args){
 		name = "<-";
 		newButton(pos, args);
@@ -35,7 +35,7 @@ public class ButtonBack extends Button {
 	}
 	
 	@Override
-	protected void change() {
+	protected void changeStyle() {
 		if(Ui.getStyle() instanceof DefaultStyle) {
 			setBack(null);
 			setFore(Color.BLACK);
