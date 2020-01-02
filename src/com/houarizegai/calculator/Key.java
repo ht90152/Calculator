@@ -153,7 +153,7 @@ public class Key {
 		return new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 //				repaintFont();
-				if (Pattern.matches("([-]?\\d+[.]\\d*)|(\\d+)", Ui.getText()))
+				if (Pattern.matches("([-]?\\d+[.]\\d*)|([-]?\\d+)", Ui.getText()))
 					 if (args.getGo()) {
 						args.setVal(calc(args.getVal(), Ui.getText(), args.getOpt()));
 	                    if (Pattern.matches("[-]?[\\d]+[.][0]*", String.valueOf(args.getVal()))) {
