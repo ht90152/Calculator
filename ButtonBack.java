@@ -1,0 +1,48 @@
+package com.houarizegai.calculator;
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.KeyStroke;
+
+public class ButtonBack extends ButtonFunc {
+	ButtonBack(Pos pos){
+		name = "⌫";
+		newButton(pos);
+		
+		key = KeyStroke.getKeyStroke(KeyEvent.VK_BACK_SPACE, 0);
+		keyBind();
+	}
+	
+	@Override
+	protected ActionListener event(CalcArg args) {
+		return new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				String str = Ui.getText();
+				StringBuilder str2 = new StringBuilder();
+				for (int i = 0; i < (str.length() - 1); i++) {
+					str2.append(str.charAt(i));
+				}
+				if (str2.toString().equals("")) {
+					Ui.setText("0");
+				} else {
+					Ui.setText(str2.toString());
+				}
+			}
+		};
+	}
+	
+	@Override
+	protected void changeStyle() {
+		if(Ui.getStyle() instanceof DefaultStyle) {
+			setBack(null);
+			setFore(Color.BLACK);
+		} else if(Ui.getStyle() instanceof ColorStyle) {
+    		setBack(Color.ORANGE);
+    		setFore(Color.WHITE);
+		}
+	}
+	
+}
