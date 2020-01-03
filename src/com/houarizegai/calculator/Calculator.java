@@ -37,6 +37,8 @@ public class Calculator {
          x[0] x[1] x[2] x[3]
     
     */
+	@SuppressWarnings("unused")
+	private Ui ui;
 	private static CalcArg args;
 	public static CalcArg getArgs() {
 		return args;
@@ -47,7 +49,7 @@ public class Calculator {
 	
     private Calculator() {
         setArgs(new CalcArg());
-    	new Ui();
+    	ui = new Ui();
     }
 
     public static void main(String[] args) {

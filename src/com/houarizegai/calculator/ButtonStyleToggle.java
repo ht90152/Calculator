@@ -11,8 +11,6 @@ public class ButtonStyleToggle extends ButtonToggle {
 		setName("Change Style");
 		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_S, 0));
 		newButton(pos);
-		
-		btn.doClick();
 	}
 	
 	@Override
