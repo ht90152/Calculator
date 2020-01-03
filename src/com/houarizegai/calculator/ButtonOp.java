@@ -26,8 +26,7 @@ public class ButtonOp extends ButtonFunc {
 	                    	args.setGo(false);
 						args.setAddWrite(false);
 					} else {
-						if(name.charAt(0) != '%' && name.charAt(0) != '=')
-							args.setOpt(name.charAt(0));
+						args.setOpt(name.charAt(0));
 					}
 				}
 		};
