@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.3" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.houarizegai.calculator.ButtonSign" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonSign.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="136" width="234" x="844" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.houarizegai.calculator.ButtonToggle" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonToggle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="96" width="178" x="991" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.houarizegai.calculator.ButtonClear" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonClear.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="136" width="234" x="1118" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.houarizegai.calculator.Ui" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/Ui.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="236" width="234" x="1025" y="59"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.houarizegai.calculator.ButtonMin" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonMin.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="194" x="798" y="1543"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.houarizegai.calculator.ColorStyle" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ColorStyle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="96" width="178" x="555" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.houarizegai.calculator.Pos" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/Pos.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="176" width="178" x="1209" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.houarizegai.calculator.ButtonDiv" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonDiv.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="192" x="1032" y="1543"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.houarizegai.calculator.Style" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/Style.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="96" width="178" x="773" y="435"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.houarizegai.calculator.Button" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/Button.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="676" width="234" x="1163" y="435"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.houarizegai.calculator.Calculator" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/Calculator.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="178" x="555" y="59"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.houarizegai.calculator.ButtonEqual" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonEqual.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="209" x="1264" y="1543"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.houarizegai.calculator.ButtonMod" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonMod.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="200" x="1513" y="1543"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.houarizegai.calculator.DefaultStyle" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/DefaultStyle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="96" width="178" x="773" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.houarizegai.calculator.ButtonAdd" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonAdd.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="198" x="1753" y="1543"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.houarizegai.calculator.ButtonOp" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonOp.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="136" width="241" x="1392" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.houarizegai.calculator.ButtonMul" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonMul.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="193" x="1991" y="1543"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.houarizegai.calculator.ButtonNum" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonNum.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="96" width="246" x="1673" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.houarizegai.calculator.ButtonFunc" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonFunc.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="230" x="1427" y="1151"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.houarizegai.calculator.ButtonBack" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonBack.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="136" width="234" x="1959" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.houarizegai.calculator.ButtonPoint" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonPoint.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="136" width="234" x="2233" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.houarizegai.calculator.ButtonStyleToggle" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonStyleToggle.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="136" width="249" x="555" y="1367"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.houarizegai.calculator.CalcArg" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/CalcArg.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="336" width="212" x="773" y="59"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="24">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="25">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="26">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="27">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="2"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <association id="29">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="30" name="pos"/>      
+      <multiplicity id="31" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="32">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="33">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="34">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="38">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="39">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <association id="40">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="41" name="style"/>      
+      <multiplicity id="42" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="43">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="44">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <generalization id="45">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="16"/>  
+  </generalization>  
+  <generalization id="46">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="19"/>  
+  </generalization>  
+  <association id="47">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="48" name="btns"/>      
+      <multiplicity id="49" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
