@@ -4,6 +4,8 @@ import java.awt.Color;
 
 public class DefaultStyle extends Style {
 	protected void changeStyle(){
+		Ui.getWin().getContentPane().setBackground(null);
+		Ui.getJText().setBackground(Color.WHITE);
 		for(Button btn:Ui.getAllBtns()) {
 			btn.setBack(null);
 	    	if(btn instanceof ButtonStyleToggle) {

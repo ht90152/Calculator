@@ -8,12 +8,17 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 public class Ui {
+	private static JFrame window; // This is Main Window
 	private static JTextField inText;
 	private static Style style;
 	private static ArrayList<Button> btns = new ArrayList<Button>();
 	
 	public static ArrayList<Button> getAllBtns() {
 		return btns;
+	}
+	
+	public static JFrame getWin() {
+		return window;
 	}
 	
 	public static JTextField getJText() {
@@ -35,7 +40,7 @@ public class Ui {
 	}
 	
 	Ui() {
-		JFrame window = new JFrame("Calculator");
+		window = new JFrame("Calculator");
         window.setSize(400,600); // Height And Width Of Window
         window.setLocationRelativeTo(null); // Move Window To Center
         

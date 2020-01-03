@@ -5,6 +5,8 @@ import java.awt.Color;
 public class GrayStyle extends Style {
 	@Override
 	protected void changeStyle() {
+		Ui.getWin().getContentPane().setBackground(Color.GRAY);
+		Ui.getJText().setBackground(Color.LIGHT_GRAY);
 		for(Button btn:Ui.getAllBtns()) {
 	    	if(btn instanceof ButtonStyleToggle) {
 	    		btn.setBack(Color.BLUE);

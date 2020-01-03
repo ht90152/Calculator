@@ -8,7 +8,7 @@ import javax.swing.KeyStroke;
 
 public class ButtonStyleToggle extends ButtonToggle {
 	protected ButtonStyleToggle(Pos pos){
-		setName("Change Style");
+		setName("Style Change");
 		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_S, 0));
 		newButton(pos);
 	}
