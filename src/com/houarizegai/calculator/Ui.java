@@ -73,12 +73,12 @@ public class Ui {
         btns.add(new ButtonPoint(new Pos(x[2],y[5],wBtn,hBtn)));
         btns.add(new ButtonEqual(new Pos(x[3],y[5],wBtn,hBtn)));
         
-        setStyle(new DefaultStyle());
-        btns.add(new ButtonStyleToggle(new Pos(200, 30, 140, 18)));
+        setStyle(new StyleSimple());
+        btns.add(new ButtonChangeStyle(new Pos(200, 30, 140, 18)));
         
         for(Button btn:btns) {
         	window.add(btn.getBtn());
-        	if(btn instanceof ButtonStyleToggle) {
+        	if(btn instanceof ButtonChangeStyle) {
         		btn.getBtn().doClick();
         	}
         }

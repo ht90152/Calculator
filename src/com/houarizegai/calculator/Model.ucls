@@ -10,8 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.houarizegai.calculator.ButtonToggle" project="Calculator-master" 
-    file="/Calculator-master/src/com/houarizegai/calculator/ButtonToggle.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="com.houarizegai.calculator.ButtonChange" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonChange.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="96" width="178" x="639" y="1084"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -46,8 +46,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="com.houarizegai.calculator.ColorStyle" project="Calculator-master" 
-    file="/Calculator-master/src/com/houarizegai/calculator/ColorStyle.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="6" language="java" name="com.houarizegai.calculator.StyleColor" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/StyleColor.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="136" width="178" x="-15" y="1084"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -73,8 +73,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="com.houarizegai.calculator.GrayStyle" project="Calculator-master" 
-    file="/Calculator-master/src/com/houarizegai/calculator/GrayStyle.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="9" language="java" name="com.houarizegai.calculator.StyleGray" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/StyleGray.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="136" width="178" x="203" y="1084"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -127,8 +127,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="com.houarizegai.calculator.DefaultStyle" project="Calculator-master" 
-    file="/Calculator-master/src/com/houarizegai/calculator/DefaultStyle.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="15" language="java" name="com.houarizegai.calculator.StyleSimple" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/StyleSimple.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="136" width="178" x="421" y="1084"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -199,8 +199,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="23" language="java" name="com.houarizegai.calculator.ButtonStyleToggle" project="Calculator-master" 
-    file="/Calculator-master/src/com/houarizegai/calculator/ButtonStyleToggle.java" binary="false" corner="BOTTOM_RIGHT">    
+  <class id="23" language="java" name="com.houarizegai.calculator.ButtonChangeStyle" project="Calculator-master" 
+    file="/Calculator-master/src/com/houarizegai/calculator/ButtonChangeStyle.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="116" width="234" x="66" y="1300"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
