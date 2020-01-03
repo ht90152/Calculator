@@ -6,8 +6,8 @@ import java.awt.event.KeyEvent;
 import javax.swing.KeyStroke;
 
 public class ButtonMod extends ButtonOp {
-	ButtonMod(Pos pos, CalcArg args) {
-		super("%", pos, args);
+	ButtonMod(Pos pos) {
+		super("%", pos);
 		
 		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_5, KeyEvent.SHIFT_MASK));
 		keyBind();

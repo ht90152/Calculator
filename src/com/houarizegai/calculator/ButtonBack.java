@@ -8,9 +8,9 @@ import java.awt.event.KeyEvent;
 import javax.swing.KeyStroke;
 
 public class ButtonBack extends ButtonFunc {
-	ButtonBack(Pos pos, CalcArg args){
+	ButtonBack(Pos pos){
 		name = "⌫";
-		newButton(pos, args);
+		newButton(pos);
 		
 		key = KeyStroke.getKeyStroke(KeyEvent.VK_BACK_SPACE, 0);
 		keyBind();

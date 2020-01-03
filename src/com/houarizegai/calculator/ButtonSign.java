@@ -8,9 +8,9 @@ import java.awt.event.KeyEvent;
 import javax.swing.KeyStroke;
 
 public class ButtonSign extends ButtonFunc {
-	ButtonSign(Pos pos, CalcArg args){
+	ButtonSign(Pos pos){
 		name = "+/-";
-		newButton(pos, args);
+		newButton(pos);
 		
 		key = KeyStroke.getKeyStroke(KeyEvent.VK_F9, 0);
 		keyBind();

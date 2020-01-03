@@ -6,8 +6,8 @@ import java.awt.event.KeyEvent;
 import javax.swing.KeyStroke;
 
 public class ButtonEqual extends ButtonOp {
-	ButtonEqual(Pos pos, CalcArg args){
-		super("=", pos, args);
+	ButtonEqual(Pos pos){
+		super("=", pos);
 		
 		key = KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0);
 		keyBind();

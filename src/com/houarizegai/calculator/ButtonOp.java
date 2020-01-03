@@ -8,9 +8,9 @@ import java.util.regex.Pattern;
 import javax.swing.JTextField;
 
 public class ButtonOp extends ButtonFunc {
-	ButtonOp(String sign, Pos pos, CalcArg args){
+	ButtonOp(String sign, Pos pos){
 		name = sign;
-		newButton(pos, args);
+		newButton(pos);
 		
 		keyBind();
 	}

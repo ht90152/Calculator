@@ -5,9 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ButtonClear extends ButtonFunc {
-	ButtonClear(Pos pos, CalcArg args){
+	ButtonClear(Pos pos){
 		name = "C";
-		newButton(pos, args);
+		newButton(pos);
 		
 		keyBind();
 	}

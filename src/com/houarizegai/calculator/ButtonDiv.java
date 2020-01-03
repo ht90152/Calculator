@@ -6,8 +6,8 @@ import java.awt.event.KeyEvent;
 import javax.swing.KeyStroke;
 
 public class ButtonDiv extends ButtonOp {
-	ButtonDiv(Pos pos, CalcArg args) {
-		super("/", pos, args);
+	ButtonDiv(Pos pos) {
+		super("/", pos);
 		
 		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_DIVIDE, 0));
 		keyBind();

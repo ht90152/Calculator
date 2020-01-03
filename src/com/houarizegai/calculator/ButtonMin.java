@@ -6,8 +6,8 @@ import java.awt.event.KeyEvent;
 import javax.swing.KeyStroke;
 
 public class ButtonMin extends ButtonOp {
-	ButtonMin(Pos pos, CalcArg args) {
-		super("-", pos, args);
+	ButtonMin(Pos pos) {
+		super("-", pos);
 		
 		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_SUBTRACT, 0));
 		keyBind();

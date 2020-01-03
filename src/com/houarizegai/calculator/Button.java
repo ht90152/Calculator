@@ -49,13 +49,13 @@ public class Button {
 		this.btn = btn;
 	}
 	
-	protected void newButton(Pos pos, CalcArg args){
+	protected void newButton(Pos pos){
 		btn = new JButton(name);
 		btn.setToolTipText(name);
         btn.setBounds(pos.x, pos.y, pos.width, pos.height);
 //      btn.setFont(btnFont);
         btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        btn.addActionListener(event(args));
+        btn.addActionListener(event(Calculator.getArgs()));
         key = KeyStroke.getKeyStroke(name.charAt(0), 0);
 	}
 	@SuppressWarnings("serial")
