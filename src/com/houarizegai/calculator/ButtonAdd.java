@@ -5,11 +5,13 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.KeyStroke;
 
-public class ButtonAdd extends ButtonSign {
+public class ButtonAdd extends ButtonOp {
 	ButtonAdd(Pos pos, CalcArg args) {
 		super("+", pos, args);
 		
 		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_ADD, 0));
+		keyBind();
+		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_EQUALS, KeyEvent.SHIFT_MASK));
 		keyBind();
 	}
 	

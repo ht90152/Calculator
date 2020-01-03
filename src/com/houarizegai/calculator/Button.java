@@ -58,6 +58,7 @@ public class Button {
         btn.addActionListener(event(args));
         key = KeyStroke.getKeyStroke(name.charAt(0), 0);
 	}
+	@SuppressWarnings("serial")
 	protected void keyBind() {
 		btn.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(key, name+" key");
 		btn.getActionMap().put(name+" key", new AbstractAction() {
@@ -127,7 +128,7 @@ public class Button {
 	}
 	
 	protected void setBtnFont() {
-		btn.setFont(new Font("Comic Sans MS", Font.PLAIN, 28));
+		btn.setFont(new Font("Code2000", Font.PLAIN, 28));
 	}
 	
 }

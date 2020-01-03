@@ -39,7 +39,7 @@ public class Calculator {
     */
 
     private Calculator() {
-        Ui ui = new Ui(new CalcArg());
+        new Ui(new CalcArg());
     }
 
     public static void main(String[] args) {

@@ -3,12 +3,17 @@ package com.houarizegai.calculator;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+
+import javax.swing.KeyStroke;
 
 public class ButtonPoint extends ButtonFunc {
 	ButtonPoint(Pos pos, CalcArg args){
 		name = ".";
 		newButton(pos, args);
 		
+		keyBind();
+		key = KeyStroke.getKeyStroke(KeyEvent.VK_DECIMAL, 0);
 		keyBind();
 	}
 	

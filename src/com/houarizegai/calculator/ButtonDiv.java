@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.KeyStroke;
 
-public class ButtonDiv extends ButtonSign {
+public class ButtonDiv extends ButtonOp {
 	ButtonDiv(Pos pos, CalcArg args) {
 		super("/", pos, args);
 		

@@ -9,7 +9,7 @@ import javax.swing.KeyStroke;
 
 public class ButtonBack extends ButtonFunc {
 	ButtonBack(Pos pos, CalcArg args){
-		name = "<-";
+		name = "⌫";
 		newButton(pos, args);
 		
 		key = KeyStroke.getKeyStroke(KeyEvent.VK_BACK_SPACE, 0);

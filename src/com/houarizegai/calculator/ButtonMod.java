@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.KeyStroke;
 
-public class ButtonMod extends ButtonSign {
+public class ButtonMod extends ButtonOp {
 	ButtonMod(Pos pos, CalcArg args) {
 		super("%", pos, args);
 		

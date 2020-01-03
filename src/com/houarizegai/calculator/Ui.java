@@ -57,15 +57,16 @@ public class Ui {
         for(int i = 1;i < 10; i++) {
         	btns.add(new ButtonNum(Integer.toString(i), new Pos(x[(i-1)%3],y[(9-i)/3+2],wBtn,hBtn), args));
         }
-        btns.add(new ButtonC(new Pos(x[0],y[1],wBtn,hBtn), args));
+        btns.add(new ButtonClear(new Pos(x[0],y[1],wBtn,hBtn), args));
         btns.add(new ButtonBack(new Pos(x[1],y[1],wBtn,hBtn), args));
         btns.add(new ButtonMod(new Pos(x[2],y[1],wBtn,hBtn), args));
         btns.add(new ButtonDiv(new Pos(x[3],y[1],wBtn,hBtn), args));
         btns.add(new ButtonMul(new Pos(x[3],y[2],wBtn,hBtn), args));
         btns.add(new ButtonMin(new Pos(x[3],y[3],wBtn,hBtn), args));
         btns.add(new ButtonAdd(new Pos(x[3],y[4],wBtn,hBtn), args));
-        btns.add(new ButtonPoint(new Pos(x[0],y[5],wBtn,hBtn), args));
-        btns.add(new ButtonEqual(new Pos(x[2],y[5],wBtn*2+10,hBtn), args));
+        btns.add(new ButtonSign(new Pos(x[0],y[5],wBtn,hBtn), args));
+        btns.add(new ButtonPoint(new Pos(x[2],y[5],wBtn,hBtn), args));
+        btns.add(new ButtonEqual(new Pos(x[3],y[5],wBtn,hBtn), args));
         
         setStyle(new DefaultStyle());
         btns.add(new ButtonStyleToggle(new Pos(200, 30, 140, 18), args));

@@ -5,7 +5,7 @@ import java.awt.event.KeyEvent;
 
 import javax.swing.KeyStroke;
 
-public class ButtonEqual extends ButtonSign {
+public class ButtonEqual extends ButtonOp {
 	ButtonEqual(Pos pos, CalcArg args){
 		super("=", pos, args);
 		

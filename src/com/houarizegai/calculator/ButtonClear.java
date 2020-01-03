@@ -3,16 +3,12 @@ package com.houarizegai.calculator;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 
-import javax.swing.KeyStroke;
-
-public class ButtonSign extends ButtonFunc {
-	ButtonSign(Pos pos, CalcArg args){
-		name = "+/-";
+public class ButtonClear extends ButtonFunc {
+	ButtonClear(Pos pos, CalcArg args){
+		name = "C";
 		newButton(pos, args);
 		
-		key = KeyStroke.getKeyStroke(KeyEvent.VK_F9, 0);
 		keyBind();
 	}
 	
@@ -20,9 +16,9 @@ public class ButtonSign extends ButtonFunc {
 	protected ActionListener event(CalcArg args) {
 		return new ActionListener(){
 			public void actionPerformed(ActionEvent e){
-				args.setOpt(' ');
-	            args.setVal(0-Double.parseDouble(Ui.getText()));
-	            Ui.setText(String.valueOf(args.getVal()));
+				Ui.setText("0");
+	            args.setOpt(' ');
+	            args.setVal(0);
 			}
 		};
 	}
@@ -33,7 +29,7 @@ public class ButtonSign extends ButtonFunc {
 			setBack(null);
 			setFore(Color.BLACK);
 		} else if(Ui.getStyle() instanceof ColorStyle) {
-			setBack(Color.CYAN);
+			setBack(Color.RED);
 			setFore(Color.WHITE);
 		}
 	}
