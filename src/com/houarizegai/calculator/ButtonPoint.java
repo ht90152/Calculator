@@ -9,12 +9,9 @@ import javax.swing.KeyStroke;
 
 public class ButtonPoint extends ButtonFunc {
 	ButtonPoint(Pos pos){
-		name = ".";
+		setName(".");
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_DECIMAL, 0));
 		newButton(pos);
-		
-		keyBind();
-		key = KeyStroke.getKeyStroke(KeyEvent.VK_DECIMAL, 0);
-		keyBind();
 	}
 	
 	@Override

@@ -7,12 +7,11 @@ import javax.swing.KeyStroke;
 
 public class ButtonMul extends ButtonOp {
 	ButtonMul(Pos pos) {
-		super("*", pos);
+		super("*");
 		
-		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_MULTIPLY, 0));
-		keyBind();
-		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_8, KeyEvent.SHIFT_MASK));
-		keyBind();
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_MULTIPLY, 0));
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_8, KeyEvent.SHIFT_MASK));
+		newButton(pos);
 	}
 	
 	@Override

@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 public class ButtonClear extends ButtonFunc {
 	ButtonClear(Pos pos){
-		name = "C";
+		setName("C");
 		newButton(pos);
 		
 		keyBind();

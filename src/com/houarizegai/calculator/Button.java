@@ -5,6 +5,7 @@ import java.awt.Cursor;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 import javax.swing.AbstractAction;
@@ -15,7 +16,7 @@ import javax.swing.KeyStroke;
 public class Button {
 	protected String name;
 	private Pos pos;
-	protected KeyStroke key;
+	protected ArrayList<KeyStroke> keys = new ArrayList<KeyStroke>();
 	protected JButton btn;
 	
 	private Color back, fore;
@@ -35,11 +36,11 @@ public class Button {
 		this.pos = pos;
 	}
 	
-	public KeyStroke getKey() {
-		return key;
+	public ArrayList<KeyStroke> getKeys() {
+		return keys;
 	}
-	public void setKey(KeyStroke key) {
-		this.key = key;
+	public void addKey(KeyStroke key) {
+		this.keys.add(key);
 	}
 	
 	public JButton getBtn() {
@@ -56,17 +57,20 @@ public class Button {
 //      btn.setFont(btnFont);
         btn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         btn.addActionListener(event(Calculator.getArgs()));
-        key = KeyStroke.getKeyStroke(name.charAt(0), 0);
+        addKey(KeyStroke.getKeyStroke(name.charAt(0), 0));
+        keyBind();
 	}
 	@SuppressWarnings("serial")
 	protected void keyBind() {
-		btn.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(key, name+" key");
-		btn.getActionMap().put(name+" key", new AbstractAction() {
-            @Override
-            public void actionPerformed(ActionEvent ev) {
-                btn.doClick();
-            }
-        });
+		for(KeyStroke key:getKeys()) {
+			btn.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW).put(key, name+" key");
+			btn.getActionMap().put(name+" key", new AbstractAction() {
+	            @Override
+	            public void actionPerformed(ActionEvent ev) {
+	                btn.doClick();
+	            }
+	        });
+		}
 	}
 	protected ActionListener event(CalcArg args) {
 		return new ActionListener(){

@@ -9,11 +9,9 @@ import javax.swing.KeyStroke;
 
 public class ButtonSign extends ButtonFunc {
 	ButtonSign(Pos pos){
-		name = "+/-";
+		setName("+/-");
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_F9, 0));
 		newButton(pos);
-		
-		key = KeyStroke.getKeyStroke(KeyEvent.VK_F9, 0);
-		keyBind();
 	}
 	
 	@Override

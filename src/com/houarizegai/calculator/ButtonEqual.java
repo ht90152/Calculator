@@ -7,10 +7,10 @@ import javax.swing.KeyStroke;
 
 public class ButtonEqual extends ButtonOp {
 	ButtonEqual(Pos pos){
-		super("=", pos);
+		super("=");
 		
-		key = KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0);
-		keyBind();
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0));
+		newButton(pos);
 	}
 	
 	@Override

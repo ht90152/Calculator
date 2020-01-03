@@ -7,10 +7,10 @@ import javax.swing.KeyStroke;
 
 public class ButtonDiv extends ButtonOp {
 	ButtonDiv(Pos pos) {
-		super("/", pos);
+		super("/");
 		
-		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_DIVIDE, 0));
-		keyBind();
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_DIVIDE, 0));
+		newButton(pos);
 	}
 	
 	@Override

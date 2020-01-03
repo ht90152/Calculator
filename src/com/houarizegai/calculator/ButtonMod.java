@@ -7,10 +7,10 @@ import javax.swing.KeyStroke;
 
 public class ButtonMod extends ButtonOp {
 	ButtonMod(Pos pos) {
-		super("%", pos);
+		super("%");
 		
-		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_5, KeyEvent.SHIFT_MASK));
-		keyBind();
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_5, KeyEvent.SHIFT_MASK));
+		newButton(pos);
 	}
 	
 	@Override

@@ -7,12 +7,11 @@ import javax.swing.KeyStroke;
 
 public class ButtonMin extends ButtonOp {
 	ButtonMin(Pos pos) {
-		super("-", pos);
+		super("-");
 		
-		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_SUBTRACT, 0));
-		keyBind();
-		setKey(KeyStroke.getKeyStroke(KeyEvent.VK_MINUS, KeyEvent.SHIFT_MASK));
-		keyBind();
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_SUBTRACT, 0));
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_MINUS, KeyEvent.SHIFT_MASK));
+		newButton(pos);
 	}
 	
 	@Override

@@ -9,11 +9,9 @@ import javax.swing.KeyStroke;
 
 public class ButtonStyleToggle extends ButtonToggle {
 	protected ButtonStyleToggle(Pos pos){
-		name = "Toggle Colors";
+		setName("Toggle Colors");
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_T, 0));
 		newButton(pos);
-		
-		key = KeyStroke.getKeyStroke(KeyEvent.VK_T, 0);
-		keyBind();
 		
 		changeStyle();
 		update();
