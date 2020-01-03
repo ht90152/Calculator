@@ -19,7 +19,7 @@ public class ButtonSign extends ButtonFunc {
 			public void actionPerformed(ActionEvent e){
 				args.setOpt(' ');
 	            args.setVal(0-Double.parseDouble(Ui.getText()));
-	            Ui.setText(String.valueOf(args.getVal()));
+	            setTextByType(args);
 			}
 		};
 	}

@@ -16,18 +16,14 @@ public class ButtonOp extends ButtonFunc {
 				if (Pattern.matches("([-]?\\d+[.]\\d*)|([-]?\\d+)", Ui.getText()))
 					 if (args.getGo()) {
 						args.setVal(CalcArg.calc(args.getVal(), Ui.getText(), args.getOpt()));
-	                    if (Pattern.matches("[-]?[\\d]+[.][0]*", String.valueOf(args.getVal()))) {
-	                    	Ui.setText(String.valueOf((int) args.getVal()));
-	                    } else {
-	                        Ui.setText(String.valueOf(args.getVal()));
-						}
+						setTextByType(args);
 	                    args.setOpt(name.charAt(0));
 	                    if(name.charAt(0) != '=')
 	                    	args.setGo(false);
 						args.setAddWrite(false);
-					} else {
+					 } else {
 						args.setOpt(name.charAt(0));
-					}
+					 }
 				}
 		};
 	}

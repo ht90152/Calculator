@@ -1,5 +1,5 @@
 package com.houarizegai.calculator;
 
-public class ButtonChange extends Button {
+public abstract class ButtonChange extends Button {
 
 }

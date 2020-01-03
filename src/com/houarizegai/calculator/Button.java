@@ -2,18 +2,16 @@ package com.houarizegai.calculator;
 
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.regex.Pattern;
 
 import javax.swing.AbstractAction;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.KeyStroke;
 
-public class Button {
+public abstract class Button {
 	protected String name;
 	private Pos pos;
 	protected ArrayList<KeyStroke> keys = new ArrayList<KeyStroke>();
@@ -72,23 +70,7 @@ public class Button {
 	        });
 		}
 	}
-	protected ActionListener event(CalcArg args) {
-		return new ActionListener(){
-			public void actionPerformed(ActionEvent e){
-				if (args.getAddWrite()) {
-		            if (Pattern.matches("[0]*", Ui.getText())) {
-		                Ui.setText(name);
-		            } else {
-		                Ui.setText(Ui.getText() + name);
-		            }
-		        } else {
-		            Ui.setText(name);
-		            args.setAddWrite(true);
-		        }
-		        args.setGo(true);
-			}
-		};
-	}
+	protected abstract ActionListener event(CalcArg args);
 	
 	public Color getBack() {
 		return back;
@@ -121,10 +103,6 @@ public class Button {
 	protected void update() {
 		btn.setBackground(back);
 		btn.setForeground(fore);
-	}
-	
-	protected void setBtnFont() {
-		btn.setFont(new Font("Code2000", Font.PLAIN, 28));
 	}
 	
 }
