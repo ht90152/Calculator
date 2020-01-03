@@ -118,14 +118,6 @@ public class Button {
 		this.size = size;
 	}
 	
-	protected void changeStyle() {
-		if(Ui.getStyle() instanceof DefaultStyle) {
-			setBack(null);
-			setFore(Color.BLACK);
-		} else if(Ui.getStyle() instanceof ColorStyle) {
-			
-		}
-	}
 	protected void update() {
 		btn.setBackground(back);
 		btn.setForeground(fore);

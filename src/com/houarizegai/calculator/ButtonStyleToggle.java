@@ -1,6 +1,5 @@
 package com.houarizegai.calculator;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -9,40 +8,26 @@ import javax.swing.KeyStroke;
 
 public class ButtonStyleToggle extends ButtonToggle {
 	protected ButtonStyleToggle(Pos pos){
-		setName("Toggle Colors");
-		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_T, 0));
+		setName("Change Style");
+		addKey(KeyStroke.getKeyStroke(KeyEvent.VK_S, 0));
 		newButton(pos);
 		
-		changeStyle();
-		update();
+		btn.doClick();
 	}
 	
 	@Override
 	protected ActionListener event(CalcArg args) {
 		return new ActionListener(){
 			public void actionPerformed(ActionEvent e){
+				Style sty = Ui.getStyle();
+				Ui.setStyle(sty.getNext());
+				sty.changeStyle();
 				for(Button btn:Ui.getAllBtns())
 			    {
-					btn.changeStyle();
 		        	btn.update();
 			    }
 			}
 		};
-	}
-	
-	@Override
-	protected void changeStyle() {
-		if(Ui.getStyle() instanceof DefaultStyle) {
-			setBack(Color.GREEN.darker());
-			setFore(Color.WHITE);
-			setName("Toggle Colors");
-			Ui.setStyle(new ColorStyle());
-		} else if(Ui.getStyle() instanceof ColorStyle) {
-    		setBack(null);
-    		setFore(Color.BLACK);
-    		setName("Untoggle Colors");
-    		Ui.setStyle(new DefaultStyle());
-		}
 	}
 	
 }

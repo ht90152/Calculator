@@ -1,6 +1,5 @@
 package com.houarizegai.calculator;
 
-import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -27,17 +26,6 @@ public class ButtonPoint extends ButtonFunc {
 				args.setGo(true);
 			}
 		};
-	}
-	
-	@Override
-	protected void changeStyle() {
-		if(Ui.getStyle() instanceof DefaultStyle) {
-			setBack(null);
-			setFore(Color.BLACK);
-		} else if(Ui.getStyle() instanceof ColorStyle) {
-    		setBack(Color.MAGENTA);
-    		setFore(Color.WHITE);
-		}
 	}
 	
 }
